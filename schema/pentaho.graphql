@@ -1,0 +1,31 @@
+# A type that describes a scheduled job on Pentaho BI server(now Pentaho Server)
+type PentahoJob {
+    # group name
+    group: String!,
+    # job id
+    id: String!,
+    # job name
+    name: String!,
+    # last run
+    lastRun: String,
+    # next run
+    nextRun: String,
+    # job state
+    state: String!,
+    # user name
+    user: String!,
+    server: String!,
+    duration: Int!,
+    parameters: [PentahoJobParameter]!,
+    trigger: PentahoJobTrigger
+}
+
+type PentahoJobParameter {
+    name: String!,
+    value: String
+}
+
+type PentahoJobTrigger {
+    type: String!,
+    startTime: String
+}

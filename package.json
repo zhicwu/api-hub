@@ -1,0 +1,48 @@
+{
+  "name": "api-hub",
+  "version": "1.0.0",
+  "description": "GraphQL-based API server to encapsulate all kinds of REST APIs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zhicwu/api-hub.git"
+  },
+  "keywords": [
+    "api",
+    "hub",
+    "microservice"
+  ],
+  "author": "zhicwu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhicwu/api-hub/issues"
+  },
+  "homepage": "https://github.com/zhicwu/api-hub#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.4",
+    "gql-merge": "0.0.6",
+    "graphql": "^0.9.6",
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.6.3",
+    "url-join": "^2.0.1",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
+    "jslint": "^0.10.3"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "sourceMaps": true,
+    "retainLines": true
+  }
+}
